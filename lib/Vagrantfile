@@ -1,10 +1,10 @@
 Vagrant::Config.run do |config|
-  config.vm.box = "shrinkwrap"
-  config.vm.box_url = "http://opscode-vagrant-boxes.s3.amazonaws.com/ubuntu10.04-gems.box"
+  config.vm.box = "wanton"
+  config.vm.box_url = "http://files.vagrantup.com/lucid32.box"
   config.vm.boot_mode = :gui
   config.vm.customize do |vm|
           vm.memory_size = 384
-          vm.name = "Shrinkwrap"
+          vm.name = "wanton"
   end
   config.vm.forward_port "http", 80,  9000
 end

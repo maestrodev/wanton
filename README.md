@@ -23,7 +23,7 @@ admin UI for managing instances.
 Configure your base box environment by editing the lib/Vagrantfile
 appropriately.  The default is this box:
 
-<http://opscode-vagrant-boxes.s3.amazonaws.com/ubuntu10.04-gems.box>
+<http://files.vagrantup.com/lucid32.box>
 
 # Package
 
@@ -31,7 +31,7 @@ appropriately.  The default is this box:
 
 # Run
 
-    $ java -jar [yourjarfile.jar]
+    $ java -jar wanton.jar
 
 The first time run will take a bit to fetch the box from S3, and launch.
 Hopefully you see something like this:
@@ -75,4 +75,4 @@ Then, in the browser you see:
 
 # Fork Away
 
-To create your boxes!
+To create your boxes!  This project isn't meant to be configurable, just re-used to fabricate your own JAR-based deliverable VMs.  It is expected that you'd want to do that anyway by populating the Vagrantfile with your OS and application configuration apparatus (Puppet or Chef).
